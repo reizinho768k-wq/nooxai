@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090811">
+  <meta name="description" content="NOOX AI — sua inteligência artificial.">
+  <title>NOOX AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand"><div class="brand-mark">N</div><span>NOOX<span class="brand-ai"> AI</span></span></div>
+      <button class="new-chat" id="newChat"><span>＋</span> Nova conversa</button>
+      <div class="side-label">RECENTES</div>
+      <div class="history" id="history"></div>
+      <div class="sidebar-bottom">
+        <div class="profile"><div class="avatar">N</div><div><b>NOOX AI</b><small>Assistente inteligente</small></div><span class="status-dot"></span></div>
+        <div class="side-note">Suas conversas ficam salvas neste navegador.</div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="Abrir menu">☰</button>
+        <div class="top-title">NOOX <span>AI</span></div>
+        <div class="top-right"><span class="online-dot"></span><span id="connectionText">Conectando</span><button class="icon-btn" id="clearChat" title="Limpar conversa">⌫</button></div>
+      </header>
+
+      <section class="chat-area" id="chatArea">
+        <div class="welcome" id="welcome">
+          <div class="welcome-orb"><div class="orb-core">N</div><i></i><i></i><i></i></div>
+          <div class="eyebrow"><span></span> SUA IA, DO SEU JEITO</div>
+          <h1>O que vamos <em>criar</em> hoje?</h1>
+          <p>Faça uma pergunta, compartilhe uma ideia ou envie um arquivo.<br>Estou aqui para ajudar você a tirar seus projetos do papel.</p>
+          <div class="suggestions">
+            <button class="suggestion" data-prompt="Crie um site moderno com HTML, CSS e JavaScript."><span>⌘</span><b>Criar um projeto</b><small>Transforme ideias em código</small></button>
+            <button class="suggestion" data-prompt="Explique este assunto de forma simples, com exemplos."><span>✳</span><b>Aprender algo novo</b><small>Entenda qualquer assunto</small></button>
+            <button class="suggestion" data-prompt="Me ajude a organizar minhas ideias e criar um plano."><span>◇</span><b>Organizar ideias</b><small>Planeje seu próximo passo</small></button>
+          </div>
+        </div>
+        <div class="messages" id="messages"></div>
+      </section>
+
+      <footer class="composer-wrap">
+        <div class="attachment-preview" id="attachmentPreview"></div>
+        <div class="composer">
+          <input type="file" id="fileInput" hidden multiple accept="image/*,.txt,.md,.csv,.json,.pdf,.docx">
+          <button class="tool-btn" id="attachBtn" title="Anexar arquivo">＋</button>
+          <textarea id="promptInput" rows="1" placeholder="Pergunte alguma coisa à NOOX..." aria-label="Mensagem"></textarea>
+          <button class="tool-btn mic-btn" id="micBtn" title="Falar por voz">♩</button>
+          <button class="send-btn" id="sendBtn" aria-label="Enviar mensagem"><span>↑</span></button>
+        </div>
+        <div class="composer-meta"><span>NOOX AI pode cometer erros. Confira informações importantes.</span><span>ENTER para enviar · SHIFT + ENTER para quebrar linha</span></div>
+      </footer>
+    </main>
+  </div>
+  <div class="mobile-shade" id="mobileShade"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.8.0/mammoth.browser.min.js"></script>
+  <script src="/script.js"></script>
+</body>
+</html>
