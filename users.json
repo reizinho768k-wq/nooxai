@@ -1,0 +1,31 @@
+{
+    "admin": {
+        "password": "admin123",
+        "role": "admin"
+    },
+    "LEO": {
+        "password": "1",
+        "role": "user",
+        "servers": [
+            {
+                "server_id": "e9e7b60a",
+                "link": "e9e7b60a",
+                "login_url": "/e9e7b60a/login",
+                "dashboard_url": "/e9e7b60a/home",
+                "full_link": "http://localhost:5000/e9e7b60a/home",
+                "type": "python",
+                "ram": "512MB",
+                "disk": "1GB",
+                "status": "stopped",
+                "pid": null,
+                "created": "2026-07-16 12:34:05.974872",
+                "expiry": "2026-08-15 12:34:05.778148",
+                "main_file": "main.py",
+                "requirements_file": "requirements.txt",
+                "cpu_limit": 100,
+                "rate_limit_exceeded": false,
+                "stopped_by_user": false
+            }
+        ]
+    }
+}

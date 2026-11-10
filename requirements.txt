@@ -1,0 +1,5 @@
+Flask-Session
+psutil
+gunicorn>=22.0.0
+Flask==3.0.3
+yt-dlp
